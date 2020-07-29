@@ -3,3 +3,10 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.bg-dark-100{
+    background-color: #242526;
+}
+.bg-dark-200{
+    background-color: #18191A;
+}
