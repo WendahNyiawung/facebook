@@ -10,7 +10,7 @@
 <body>
     <div class="flex flex-col min-h-screen h-screen bg-gray-950">
     <div class="bg-dark-100 border-b border-gray-700">
-        <div class="mx-4 py-2 flex items-center justify-between bg-dark-100">
+        <div class="mx-4 flex justify-between bg-dark-100">
             <div class="flex items-center">
                 <img src="assets/img/logo.png" alt="logo" class="h-16">
                 <div class="bg-gray-700 rounded-full flex items-center py-3">
@@ -21,7 +21,37 @@
                     <input type="text" placeholder="Search Facebook" class="w-full py-1px-2 bg-gray-700 focus:outline-none text-gray-500 mr-2">
                 </div>
             </div>
-            <div class="bg-red-500">Tab icons</div>
+            <div class="flex items-center justify-between">
+                <button class="bg-dark-100 hover:bg-gray-700 px-8 py-3 rounded focus:outline-none border-b-4 border-transparent focus:border-blue-600" onclick="openTab('Home')">
+                    <svg  viewBox="0 0 16 16" class="bi bi-house-door-fill h-8 text-gray-500 fill-current">
+                        <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                        <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                      </svg>
+                </button>
+                <button class="bg-dark-100 hover:bg-gray-700 px-8 py-3 rounded focus:outline-none border-b-4 border-transparent focus:border-blue-600 mx-2" onclick="openTab('Pages')">
+                    <svg  viewBox="0 0 16 16" class="bi bi-flag-fill h-8 text-gray-500 fill-current ">
+                        <path fill-rule="evenodd" d="M3.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M3.762 2.558C4.735 1.909 5.348 1.5 6.5 1.5c.653 0 1.139.325 1.495.562l.032.022c.391.26.646.416.973.416.168 0 .356-.042.587-.126a8.89 8.89 0 0 0 .593-.25c.058-.027.117-.053.18-.08.57-.255 1.278-.544 2.14-.544a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5c-.638 0-1.18.21-1.734.457l-.159.07c-.22.1-.453.205-.678.287A2.719 2.719 0 0 1 9 9.5c-.653 0-1.139-.325-1.495-.562l-.032-.022c-.391-.26-.646-.416-.973-.416-.833 0-1.218.246-2.223.916A.5.5 0 0 1 3.5 9V3a.5.5 0 0 1 .223-.416l.04-.026z"/>
+                      </svg>
+                </button>
+                <button class="bg-dark-100 hover:bg-gray-700 px-8 py-3 rounded focus:outline-none border-b-4 border-transparent focus:border-blue-600 mx-2" onclick="openTab('Watch')">
+                    <svg viewBox="0 0 16 16" class="bi bi-tv h-8 text-gray-500 fill-current " >
+                        <path fill-rule="evenodd" d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3H2c-.325 0-.502.078-.602.145a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+                      </svg>
+                </button>
+                <button class="bg-dark-100 hover:bg-gray-700 px-8 py-3 rounded focus:outline-none border-b-4 border-transparent focus:border-blue-600 mx-2" onclick="openTab('Groups')">
+                    <svg  viewBox="0 0 16 16" class="bi bi-people-fill h-8 text-gray-500 fill-current">
+                        <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                      </svg>
+                </button>
+                <button class="bg-dark-100 hover:bg-gray-700 px-8 py-3 rounded focus:outline-none border-b-4 border-transparent focus:border-blue-600 mx-2" onclick="openTab('Gaming')">
+                    <svg viewBox="0 0 16 16" class="bi bi-controller h-8 text-gray-500 fill-current">
+                        <path fill-rule="evenodd" d="M11.119 2.693c.904.19 1.75.495 2.235.98.407.408.779 1.05 1.094 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.815-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773a11.307 11.307 0 0 1-.739-.809c-.126-.147-.25-.291-.368-.422-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.422-.243.283-.494.576-.739.81-.398.378-.877.705-1.513.772a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772.486-.485 1.331-.79 2.235-.98.932-.196 2.03-.292 3.119-.292 1.089 0 2.187.096 3.119.292zm-6.032.979c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.505C4.861 9.97 5.978 9.026 8 9.026s3.139.943 3.965 1.855c.164.182.307.35.44.505.214.25.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                        <path d="M11.5 6.026a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1 1a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-7-2.5h1v3h-1v-3z"/>
+                        <path d="M3.5 6.526h3v1h-3v-1zM3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .258.966l-1.932.518a.5.5 0 0 1-.612-.354zm9.976 0a.5.5 0 0 0-.353-.613l-1.932-.518a.5.5 0 1 0-.259.966l1.932.518a.5.5 0 0 0 .612-.354z"/>
+                      </svg>
+                </button>
+            </div>
             <div class="flex items-center">
                 <div class="flex items-center rounded-full bg-dark-100 hover:bg-gray-700 py-1 ml-2">
                     <img src="assets/img/Jay.jpg" alt="Jay" class="rounded-full h-8 ml-1">
@@ -56,12 +86,33 @@
         <div class="bg-green-200 overflow-y-hidden flex">
            <div class="bg-yellow-300 w-1/5 overflow-y-auto sm:hidden md:hidden">left side</div>
            <div class="bg-indigo-400 overflow-y-auto w-3/5 sm:w-full md:w-full">
-               
+            <div id="Home" class="tab">
+                <h2>London</h2>
+                <p>London is the capital of England.</p>
+              </div>
+              
+              <div id="Pages" class="tab" style="display:none">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+              </div>
+              
+              <div id="Watch" class="tab" style="display:none">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+              <div id="Groups" class="tab" style="display:none">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+              <div id="Gaming" class="tab" style="display:none">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
            </div>
            <div class="bg-red-300 w-1/5 overflow-y-auto sm:hidden md:hidden">right side</div>
         </div>
 
     </div>
-    
+   <script src="assets/js/app.js"></script> 
 </body>
 </html>
