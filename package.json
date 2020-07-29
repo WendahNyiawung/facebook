@@ -1,0 +1,14 @@
+{
+  "name": "facebook",
+  "version": "1.0.0",
+  "description": "facebook in my own codes",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss build assets/css/main.css -o assets/css/style.css"
+  },
+  "author": "wendah Nyiawung T Desmond",
+  "license": "MIT License",
+  "dependencies": {
+    "tailwindcss": "^1.6.0"
+  }
+}
