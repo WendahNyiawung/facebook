@@ -18025,6 +18025,10 @@ video {
   background-color: #18191A;
 }
 
+.bg-blue-950{
+  background-color: #243C6D;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .sm\:container {
     width: 100%;

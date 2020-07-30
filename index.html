@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <title>FaceBook</title>
 </head>
 <body>
     <div class="flex flex-col min-h-screen h-screen bg-gray-950">
-    <div class="bg-dark-100 border-b border-gray-700">
-        <div class="mx-4 flex justify-between bg-dark-100">
+    <div class="flex flex-col bg-dark-100 border-b border-gray-700">
+         <!--Nav-->
+        <div class="mx-4 flex justify-between bg-dark-100 sm:hidden md:hidden">
+             <!--Facebook logo and search (left nav items)-->
             <div class="flex items-center">
                 <img src="assets/img/logo.png" alt="logo" class="h-16">
                 <div class="bg-gray-700 rounded-full flex items-center py-3">
@@ -21,6 +25,9 @@
                     <input type="text" placeholder="Search Facebook" class="w-full py-1px-2 bg-gray-700 focus:outline-none text-gray-500 mr-2">
                 </div>
             </div>
+             <!--End of Facebook logo and search-->
+
+             <!--Facebook nav Tabs (center nav items)-->
             <div class="flex items-center justify-between">
                 <button class="bg-dark-100 hover:bg-gray-700 px-8 py-3 rounded focus:outline-none border-b-4 border-transparent focus:border-blue-600" onclick="openTab('Home')">
                     <svg  viewBox="0 0 16 16" class="bi bi-house-door-fill h-8 text-gray-500 fill-current">
@@ -52,6 +59,9 @@
                       </svg>
                 </button>
             </div>
+             <!--End of Facebook nav Tabs-->
+
+            <!--Account and option (right navbar items)-->
             <div class="flex items-center">
                 <div class="flex items-center rounded-full bg-dark-100 hover:bg-gray-700 py-1 ml-2">
                     <img src="assets/img/Jay.jpg" alt="Jay" class="rounded-full h-8 ml-1">
@@ -81,12 +91,127 @@
                     </button>
                 </div>
             </div>
+             <!--End of account and options-->
         </div>
+         <!--End of Nav-->
+
+          <!--Mobile Tabs-->
+        <div class="bg-blue-700 lg:hidden xl:hidden flex items-center justify-between py-2">
+            <button class=" focus:bg-blue-950 focus:outline-none rounded mx-1" onclick="openTab('Home')">
+                <svg viewBox="0 0 16 16" class="bi bi-file-post h-8 w-10 text-gray-200 fill-current">
+                    <path fill-rule="evenodd" d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4z"/>
+                    <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7z"/>
+                    <path fill-rule="evenodd" d="M4 3.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+            <button class="rounded focus:outline-none" onclick="openTab('Pages')">
+                <svg  viewBox="0 0 16 16" class="bi bi-people-fill h-6 text-gray-900 fill-current ">
+                    <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                  </svg>
+            </button>
+           
+            <button class="rounded focus:outline-none" onclick="openTab('Pages')">
+                <div class="bg-red-500 rounded ml-4 -mb-4 -mt-2 z-50">
+                    <h1 class="text-white mx-1">5</h1>
+                </div>
+                <svg  viewBox="0 0 16 16" class="bi bi-chat-fill h-5 text-gray-200 fill-current">
+                    <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+                  </svg>
+            </button>
+            <button class="rounded focus:outline-none" onclick="openTab('Watch')">
+                <div class="bg-red-500 rounded ml-3 -mb-4 -mt-2 z-50">
+                    <h1 class="text-white mx-1">15</h1>
+                </div>
+                <svg viewBox="0 0 16 16" class="bi bi-bell-fill h-5 text-gray-200 fill-current z-10">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                  </svg>
+            </button>
+            <button class="rounded focus:outline-none" onclick="openTab('Watch')">
+                <svg viewBox="0 0 16 16" class="bi bi-search h-5 text-gray-900 fill-current">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+            </button>
+            <button class="rounded focus:outline-none mr-3" onclick="openTab('Watch')">
+                <svg  viewBox="0 0 16 16" class="bi bi-list h-8 text-gray-900 fill-current">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+
+        </div>
+        <!--End of mobile tabs-->
     </div>
+     <!--Facebook Main area (avaialable for desktop versions only)-->
         <div class="bg-green-200 overflow-y-hidden flex">
-           <div class="bg-yellow-300 w-1/5 overflow-y-auto sm:hidden md:hidden">left side</div>
+             <!--dsktop Left pane-->
+           <div class="bg-yellow-300 w-1/5 overflow-y-auto sm:hidden md:hidden">lorem2000</div>
+            <!-- end of desktop left pane-->
+
+             <!--Desktop middle pane-->
            <div class="bg-indigo-400 overflow-y-auto w-3/5 sm:w-full md:w-full">
-            <div id="Home" class="tab">
+            <div id="Home" class="tab sm:bg-gray-400 md:bg-gray-200">
+                
+                 <!--Contents for mobile version-->
+               <div class="lg:hidden xl:hidden">
+                <div class="flex items-center justify-between bg-white py-3 ">
+                    <img src="assets/img/Jay.jpg" alt="Jay" class="h-10 rounded-full mx-2">
+                    <input type="text" placeholder="what is on your mind?" class="border border-gray-500 py-2 px-2 rounded-full focus:outline-none w-full">
+                    <div class="flex flex-col mx-2">
+                          <svg  viewBox="0 0 16 16" class="bi bi-images h-8 text-gray-800 fill-current mt-1">
+                            <path fill-rule="evenodd" d="M12.002 4h-10a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm-10-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-10z"/>
+                            <path d="M10.648 8.646a.5.5 0 0 1 .577-.093l1.777 1.947V14h-12v-1l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
+                            <path fill-rule="evenodd" d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM4 2h10a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1z"/>
+                          </svg>
+                          <h1>Photo</h1>
+                    </div>
+                </div>
+                 <!--Mobile Stories-->
+                <div class="mt-2 flex flex-col bg-white lg:hidden xl:hidden over">
+                   <div class="flex items-center justify-between my-2 mx-2">
+                     <h1 class="font-bold ">Stories</h1>
+                     <a href=""> <h1 class="text-gray-600">Your Archive</h1></a>
+                   </div>
+                   <div class="flex items-center justify-between mx-2 overflow-x-auto my-2">
+                        <!--add story-->
+                       <div class="flex flex-col justify-between rounded w-26 mr-1" style="background-image: linear-gradient(0deg, rgba(50, 52, 52, 0.582) 0%, rgba(253,187,45,0) 100%),url(assets/img/Jay.jpg); background-position: top; background-size: cover;">
+                         <button class="rounded-full mx-2 p-1 bg-white w-12 mt-4">
+                            <svg  viewBox="0 0 16 16" class="bi bi-plus text-blue-500 h-10 fill-current ">
+                                <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                              </svg>
+                         </button>
+                         <h1 class="text-white mt-20 ml-2 mr-4 mb-2">Add to Story</h1>
+                       </div>
+                         <!--story 1-->
+                       <div class="flex flex-col justify-between rounded w-26 mr-1" style="background-image: linear-gradient(0deg, rgba(50, 52, 52, 0.582) 0%, rgba(253,187,45,0) 100%),url(assets/img/clement_status.jpg); background-position: center; background-size: cover;">
+                           <img src="assets/img/clement.jpg" alt="cl" class="rounded-full h-12 w-12 mt-4 ml-2 border-4 border-blue-600">
+                         <h1 class="text-white mt-20 ml-2 mr-4 mb-2">Ngosong Cle</h1>
+                       </div>
+                        <!--story 2-->
+                       <div class="flex flex-col justify-between rounded w-26 " style="background-image: linear-gradient(0deg, rgba(50, 52, 52, 0.582) 0%, rgba(253,187,45,0) 100%),url(assets/img/hamlet_status.jpg); background-position: center; background-size: cover;">
+                            <img src="assets/img/Hamlet_profile.jpg" alt="cl" class="rounded-full h-12 w-12 mt-4 ml-2 border-4 border-blue-600">
+                         <h1 class="text-white mt-20 ml-2 mr-4 mb-2">Hamlet Nanje</h1>
+                       </div>
+                   </div>
+                </div>
+                 <!--End of mobile stories-->
+
+                  <!--mobile feed-->
+                  <div class="bg-white flex flex-col mt-2">
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="assets/img/roland-cousins-3GTHyh2lo9o-unsplash.jpg" alt="cl" class="rounded-full h-12 w-12 mt-4 ml-2">
+                            <div class="flex flex-col ml-2 mt-4">
+                                <h1 class="font-bold">Roland Doe</h1>
+                                <div class="flex items-center">
+                                   <p class="text-gray-600">3 hrs</p> 
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+                 <!--End of Contents for mobile-->
                 <h2>London</h2>
                 <p>London is the capital of England.</p>
               </div>
@@ -109,8 +234,13 @@
                 <p>Tokyo is the capital of Japan.</p>
               </div>
            </div>
+        <!--End of desktop middle pane-->
+
+         <!--desktop right pane-->
            <div class="bg-red-300 w-1/5 overflow-y-auto sm:hidden md:hidden">right side</div>
+        <!--End of desktop right pane-->
         </div>
+    <!--End of main area -->
 
     </div>
    <script src="assets/js/app.js"></script> 
