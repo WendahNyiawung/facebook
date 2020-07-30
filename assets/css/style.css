@@ -18029,6 +18029,10 @@ video {
   background-color: #243C6D;
 }
 
+.rounded-fb{
+  border-radius: 12px;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .sm\:container {
     width: 100%;
