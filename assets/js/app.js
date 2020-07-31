@@ -7,4 +7,6 @@ function openTab(cityName) {
     document.getElementById(cityName).style.display = "block";  
   }
 
+function revealItems(){
   
+}

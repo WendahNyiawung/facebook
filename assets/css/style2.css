@@ -5,7 +5,7 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(206, 205, 205); 
+    background: rgba(206, 205, 205, 0.233); 
     border-radius: 10px;
     height: 5rem;
   }
@@ -14,3 +14,5 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #000; 
   }
+ 
+  
